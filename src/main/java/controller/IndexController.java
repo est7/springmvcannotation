@@ -25,5 +25,15 @@ class IndexController {
         index.addObject("message", "Hello S11Pring MVC");
         return index;
     }
+
+
+
+    @RequestMapping("/jump")
+    public ModelAndView jump(){
+        //redirect:/index 表示客户端跳转到index意思
+        ModelAndView mav = new ModelAndView("redirect:/addProduct11");
+        return mav;
+    }
+
 }
 
